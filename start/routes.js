@@ -17,3 +17,8 @@
 const Route = use('Route')
 
 Route.on('/').render('home')
+
+Route.get('/api/suggestion', 'ComparisonSuggestionController.index')
+
+Route.get('/api/search', 'ComparisonSearchController.index')
+
